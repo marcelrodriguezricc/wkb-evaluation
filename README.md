@@ -1,20 +1,29 @@
 # A quantitative evaluation of Optical vs. SAR-based Wave Kinematic Bathymetry (WKB) for deriving ocean depth in the surf-zone
 
 ## Project overview
-The goal of this project is to derive bathymetric maps by WKB from both optical and SAR imagery from four environmentally diverse coastal areas, then use high-resolution multibeam echosounder (MBES) survey for ground-truthing to compute the Root Mean Square Error (RMSE) for each map, to determine the strengths and weaknesses of each method.
+The goal of this project is to derive bathymetric maps by WKB from both optical and SAR imagery from four environmentally diverse coastal areas, then use NCEI Coastal Relief Models (CRS) as a source of ground-truth to compute the Root Mean Square Error (RMSE) for each map, to determine the strengths and weaknesses of each method.
 
 - Step 1: Determine four Areas of Interest (AOI)
 
-    - Select for available NCEI MBES bathymetry DEMs at a variety of locations with diverse environmental conditions, and identify coordinates for a bounding box
+    - Select a variety of locations with diverse environmental conditions. 
+    - They must also satisfy the conditions...
+        - Publicly accessible hydrographic shallow water survey data for final validation. (NOAA NCEI CRM).
+        - Have a swell-wave regime.
+        - An extended nearshore region of depths below 100 m.
+
+
+    -  And they should vary by...
         - Latitude
         - Exposure to marine processes
         - Seafloor features (reefs, sandbars, canyons, heavy slope)
 
-    - Compile a list of time windows around NCEI MBES survey time with active swell, filter for a variety of parameters
-        - Use WaveWatch III and Copernicus Marine Service models to filter for
-            - Wave height
-            - Period
-            - Direction
+    -  Determine a time window based on the following conditions
+        - Window with mean significant wave height greater than 1 m.
+            - This is the average of the highest one-third (33%) of waves (measured from trough to crest) that occur in a given period.
+            - CMEMS Wave Analysis and Forecast
+        - Negligible effect from currents.
+            - Global Ocean Physcis Analysis and Forecast
+        - Additionally, record period and direction for future reference.
 
 - Step 2: Find, load, and match datasets
 
@@ -36,15 +45,15 @@ The goal of this project is to derive bathymetric maps by WKB from both optical 
 
 - Step 5: Evaluation
 
-    - Record wave characteristics from wave model.
+    - Chart characteristics from wave model.
 
-    - Calculate “visibility index” based on the unique requirements for identifying surface waves from optical and SAR imagery.
+    - Calculate & chart “visibility index” based on the unique requirements for identifying surface waves from optical and SAR imagery.
         - Sentinel 2 - Glint score & cloud coverage
         - Sentinel 1 - Backscatter and L-min
 
-    - Compute root mean squared difference for each bathymetric derivation against MBES DEM.
+    - Compute root mean squared difference for each bathymetric derivation against CRM.
 
-    - Generate a difference map using RMS error for each pixel
+    - Generate a difference map using RMS error for each pixel.
 
 ## Setup
 

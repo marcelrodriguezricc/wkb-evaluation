@@ -1,0 +1,42 @@
+[
+  {
+    "name": "North Shore, Oahu, Hawaii",
+    "filename": "ehukai",
+    "lat": 21.671944,
+    "lon": -158.061667,
+    "crm_link": "https://www.ngdc.noaa.gov/thredds/dodsC/crm/cudem/crm_vol10_2023.nc",
+    "crm_local": "data/crm/crm_vol10_2023.nc",
+    "bbox_lat": 0.05,
+    "bbox_lon": 0.05
+  },
+  {
+    "name": "Golden Gate, California",
+    "filename": "gg",
+    "lat": 37.793056,
+    "lon": -122.555278,
+    "crm_link": "https://www.ngdc.noaa.gov/thredds/dodsC/crm/cudem/crm_vol7_2024.nc",
+    "crm_local": "data/crm/crm_vol7_2024.nc",
+    "bbox_lat": 0.25,
+    "bbox_lon": 0.25
+  },
+  {
+    "name": "Diamond Shoals, North Carolina",
+    "filename": "dshoals",
+    "lat": 35.204167,
+    "lon": -75.494444,
+    "crm_link": "https://www.ngdc.noaa.gov/thredds/dodsC/crm/cudem/crm_vol2_2023.nc",
+    "crm_local": "data/crm/crm_vol2_2023.nc",
+    "bbox_lat": 0.25,
+    "bbox_lon": 0.25
+  },
+  {
+    "name": "Punta Jacinto, Puerto Rico",
+    "filename": "pj",
+    "lat": 18.537778,
+    "lon": -67.073056,
+    "crm_link": "https://www.ngdc.noaa.gov/thredds/dodsC/crm/cudem/crm_vol9_2023.nc",
+    "crm_local": "data/crm/crm_vol9_2023.nc",
+    "bbox_lat": 0.05,
+    "bbox_lon": 0.05
+  }
+]

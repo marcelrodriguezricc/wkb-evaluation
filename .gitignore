@@ -77,7 +77,7 @@ site/
 cython_debug/
 
 # Local data/output caches
-# data/
+data/
 # data/**
 # output/
 # outputs/
@@ -91,5 +91,5 @@ cython_debug/
 # *.tif
 # *.tiff
 # *.jp2
-# *.nc
+*.nc
 # *.h5

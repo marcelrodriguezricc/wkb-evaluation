@@ -78,7 +78,7 @@ cython_debug/
 
 # Local data/output caches
 data/
-# data/**
+data/**
 # output/
 # outputs/
 # downloads/
